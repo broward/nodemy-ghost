@@ -1,0 +1,42 @@
+<nav class="navbar navbar-custom" role="navigation">
+    <div class="container">
+    	{{! Begin Header }}
+        <div class="navbar-header">
+        	{{! Begin Logo }}
+            <a class="navbar-brand" href="{{@blog.url}}">
+				{{#if @blog.logo}}
+				<img src="{{@blog.logo}}" alt="{{@blog.title}}" title="{{@blog.title}}"/>
+				{{else}}
+				{{@blog.title}}
+				{{/if}}
+			</a>
+			{{! End Logo }}
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
+                <span>Navigation</span> <i class="fa fa-tasks"></i>
+            </button>
+        </div>
+        {{! End Header }}
+        {{! Begin Social }}
+        <div class="social-top">
+            <ul class="social">
+                <li class="google">
+                    <a href="https://plus.google.com/u/0/115344097334309300964/" target="_blank" title="Google">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="http://www.linkedin.com/in/browardhorne" target="_blank" title="Linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>                
+                <li class="rss">
+                    <a href="/rss/" target="_blank" title="Rss Feed">
+                        <i class="fa fa-rss"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        {{! End Social }}
+        {{>nav}}
+    </div>
+</nav>

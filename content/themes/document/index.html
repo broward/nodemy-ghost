@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<title>GhostWall - Clean Theme For Ghost Documentation</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="description" content="This documentation contains contains tutorials that will make you easier to configure the theme as you want." />
+    <meta name="keywords" content="GhostWall - Clean Theme For Ghost, Sunflower Theme, Tutorial, Documentation, Text" />
+    <meta name="author" content="Sunflower Theme" />
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/shCoreDefault.css">
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="assets/js/html5.js"></script>
+	<![endif]-->
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/shCore.js"></script>
+    <script type="text/javascript" src="assets/js/shBrushJScript.js"></script>
+    <script type="text/javascript">
+    	SyntaxHighlighter.all();
+    </script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</head>
+<body data-spy="scroll">
+ 	<header id="top">
+	  	<div class="container">
+			<div class="span3">
+				<a href="http://www.sunflowertheme.com" target="_blank">
+					<img src="assets/img/logo.png" alt="sunflowertheme.com"/>
+				</a>
+			</div>
+			<div class="span8">
+				<h1>GhostWall - Clean Theme For Ghost Documentation</h1>
+				<p>This documentation contains tutorials that will make you easier to configure the theme as you want.</p>
+			</div>
+	 	</div>
+ 	</header>
+ 	<div class="container">
+  		<div class="row-fluid">
+   			<div class="span3" id="navigation">
+    			<ul class="nav nav-list">
+					<li class="active"><a href="#version">1. Theme Version</a></li>
+					<li><a href="#change-logs">2. Change Logs</a></li>
+			    	<li><a href="#install">3. Install</a></li>
+					<li><a href="#getting-to-know-the-theme">4. Getting to know the Theme</a></li>
+					<li><a href="#setting-up-the-theme">5. Setting up the Theme</a></li>
+					<li><a href="#writing-posts">6. Writing posts</a></li>
+					<li><a href="#using-shortcodes">7. Using Shortcodes</a></li>
+					<li><a href="#custom-theme">8. Custom Theme</a></li>
+					<li><a href="#update">9. Update</a></li>
+					<li><a href="#credits">10. Credits</a></li>
+    			</ul>
+   			</div>
+   			<div class="span9" id="content">
+   				<h4>Thank you very much for purchasing my item.</h4>
+    			<p>
+    				If you have any issue or question that this document does not cover, you can contact us via profile page <a href="http://themeforest.net/user/sunflowertheme"  target="_blank">here</a>. Thanks so much!
+    			</p>
+    			<div class="alert alert-success"> <a class="close" data-dismiss="alert">×</a> <strong>Well Done!</strong> If you like my work, please rate it. If you rate it with less than 5 stars, please let me know the reason first and I will do my best to improve the item.</div>
+    			<h3 id="contents">Table of Contents</h3>
+    			<hr />
+			    <ul class="nav nav-list">
+					<li class="active"><a href="#version">1. Theme Version</a></li>
+					<li><a href="#change-logs">2. Change Logs</a></li>
+			    	<li><a href="#install">3. Install</a></li>
+					<li><a href="#getting-to-know-the-theme">4. Getting to know the Theme</a></li>
+					<li><a href="#setting-up-the-theme">5. Setting up the Theme</a></li>
+					<li><a href="#writing-posts">6. Writing posts</a></li>
+					<li><a href="#using-shortcodes">7. Using Shortcodes</a></li>
+					<li><a href="#custom-theme">8. Custom Theme</a></li>
+					<li><a href="#update">9. Update</a></li>
+					<li><a href="#credits">10. Credits</a></li>
+			    </ul>
+				<br/>
+				<h3 id="install">1. Theme Version</h3>
+			    <p>
+					<em>Version number: 1.2.1</em>
+					<br/>
+					<em>Date of release: 03/28/2014</em>
+				</p>
+				<h3 id="change-logs">2. Change Logs</h3>
+			    <pre>
+= 03/28/2014 v1.2.1
+	==&gt; Add Ghost 0.4.2 compatible
+	==&gt; Add Tag page
+= 01/15/2014 v1.2
+	==&gt; Add Ghost 0.4 compatible version
+	==&gt; Add Featured Post Ribbon
+	==&gt; Add Static pages support
+	==&gt; Add Menu support		
+	==&gt; Encode Post Title and Post Excerpt for social share button
+	==&gt; Optimize: infinite scroll
+	==&gt; Update: Update document
+= 12/06/2013 v1.1
+	==&gt; Add: 3 comment system option: Disqus Comment, Facebook Comment, Google Plus Comment
+	==&gt; Add: Code Syntax Highlight
+	==&gt; Add: Home post meta option with date of post and comment count					
+	==&gt; Add: Tags filter count option
+	==&gt; Fix: Tags filter format capitalize
+	==&gt; Update: Update document
+= 11/13/2013 v1.0
+	==&gt; Initial Release 1.0.0
+				</pre>
+				<h3 id="install">3. Install</h3>
+				<p>
+					3.1 Unzip the main file you've downloaded from themeforest.net
+					<br/>
+					3.2 Select version:
+					<div style="padding-left:50px">
+						<p>
+							<strong>Ghost v0.3.x</strong>
+						</p>
+						<ul>
+							<li>Left sidebar version: select folder <strong>theme/ghost-0.3.x/left-sidebar-version/ghostwall</strong></li>
+							<li>Right sidebar version: select folder <strong>theme/ghost-0.3.x/right-sidebar-version/ghostwall</strong></li>
+						</ul>
+					</div>
+					<div style="padding-left:50px">
+						<p>
+							<strong>Ghost v0.4.x</strong>
+						</p>
+						<ul>
+							<li>Left sidebar version: select folder <strong>theme/ghost-0.4.x/left-sidebar-version/ghostwall</strong></li>
+							<li>Right sidebar version: select folder <strong>theme/ghost-0.4.x/right-sidebar-version/ghostwall</strong></li>
+						</ul>
+					</div>
+					<br/>
+					3.3 Upload <strong>ghostwall</strong> folder to <strong>content/themes/</strong> on ghost hosting folder.
+					<br/>
+					<br/>
+					<img src="assets/img/screen0.png" alt=""/>
+					<br/>
+					<br/>
+					3.4 Restart the service of ghost.
+					<br/>
+					3.5 Login to your Ghost admin, click on the settings options. Select your Theme name in the 'Theme' options dropdown, save it and you are set up with the theme now.
+					<br/>
+					<br/>
+					<img src="assets/img/screen1.png" alt=""/>
+					<br/>
+					<br/>
+					Enjoy!
+				</p>
+				<br />
+			    <h3 id="getting-to-know-the-theme">4. Getting to know the Theme</h3>
+			    <hr />
+			    <p>
+			    	Once downloaded, unzip the compressed folder to see the structure of Theme. You'll see something like this:
+			    	<br/>
+			    	<img src="assets/img/template-structure.png" alt=""/>
+			    </p>
+				<h5>4.1 Main Theme Structure</h5>
+			    <p>
+			    	This theme has a fixed layout with a variety of column layouts depending on the page. This theme uses the <strong>1200 grid system (12 columns)</strong> which will help streamline any customization you wish to make. If you're unfamiliar with the 1200 grid system, be sure to read about it <a href="http://getbootstrap.com/css/#grid" target="_blank">here</a>.
+			    </p>
+				<h5>4.2 Css</h5>
+				<p>All css file place in <strong>assets/css</strong> folder, contains:</p>
+			    <ul class="square">
+					<li>
+						<strong>bootstrap.min.css</strong> - The main stylesheet that required for a basic theme styling like form, input, div, list element and etc.</li>
+					<li>
+						<strong>font-awesome.min.css</strong>- The stylesheet for font awesome.
+					</li>
+					<li>
+						<strong>prettyPhoto.css</strong> - The stylesheet for jQuery Pretty Photo plugin.
+					</li>
+					<li>
+						<strong>colors.css</strong> - 15 colors defined for this theme.
+					</li>
+					<li>
+						<strong>screen.css</strong> - The main stylesheet you are encouraged to modify.
+					</li>
+					<li>
+						<strong>custom.css</strong> - The plain stylesheet that you can put your custom css.
+					</li>
+			    </ul>
+			    <p>The main CSS file <strong>(screen.css)</strong> contains all of the specific styling for the page. The file is separated into sections using:</p>
+			    <pre class="brush: js; ruler: true; first-line: 1;">
+					/*================================================================*/
+					/*  TABLE OF CONTENT
+						1. COMMON STYLE
+						2. SOCIAL NEXTWORK ICONS
+						3. INTRO BOX
+						4. CONTENT
+						5. WIDGET
+						6. SHORT CODES
+						7. FOOTER
+						8. RESPONSIVE SETTING
+					*/
+					/*================================================================*/
+				</pre>
+				<p>If you would like to edit a specific section of the site, simply find the appropriate label in the <strong>css</strong> file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+				<h5>4.3 Javascript</h5>
+				<p>All javascript file place in <strong>assets/js</strong> folder, contains:</p>
+			    <ul class="square">
+					<li>
+						<strong>bootstrap.min.js</strong> - The Bootstrap Framework Javascript.
+					</li>
+					<li>
+						<strong>jqBootstrapValidation.js</strong>- The jQuery Form Validation plugin.
+					</li>
+					<li>
+						<strong>jquery.easing.1.3.js</strong> - The jQuery effect plugin.
+					</li>
+					<li>
+						<strong>jquery.fitvids.js</strong> - The jQuery Plugin auto fix width for videos.
+					</li>
+					<li>
+						<strong>jquery.flickr.js</strong> - The jQuery Flickr plugin.
+					</li>
+					<li>
+						<strong>jquery.infinitescroll.js</strong> - The jQuery Infinite Scroll plugin.
+					</li>
+					<li>
+						<strong>jquery.instagram.js</strong> - The jQuery Instagram plugin.
+					</li>
+					<li>
+						<strong>jquery.isotope.min.js</strong> - The jQuery Isotope plugin.
+					</li>
+					<li>
+						<strong>jquery.prettyPhoto.js</strong> - The jQuery Pretty Photo plugin.
+					</li>
+					<li>
+						<strong>jribbble.js</strong> - The jQuery Dribbble plugin.
+					</li>
+					<li>
+						<strong>sscr.js</strong> - The Smooth scroll plugin.
+					</li>
+					<li>
+						<strong>config.js</strong> - The Global Variables Define for GhostWall.
+					</li>
+					<li>
+						<strong>main.js</strong> - The main javascript for GhostWall.
+					</li>
+			    </ul>
+				<p>
+					The main javascript <strong>(main.js)</strong> contains all of scripts for GhostWall. The file is separated into sections using:
+				</p>
+				<pre class="brush: js; ruler: true; first-line: 1;">
+					/*================================================================*/
+					/*  TABLE OF CONTENT
+					    1. Global Variables Define
+					    2. Common function
+					    3. Initialing
+					*/
+					/*================================================================*/
+				</pre>
+			    <h3 id="setting-up-the-theme">5. Setting Up The Theme</h3>
+				<h5>5.1 Change Theme color</h5>
+				<p>If you would like to change the color for Theme,
+					open file <strong>assets/css/colors.css</strong>:
+					<br/>
+					+ Comment all lines of import color css you don't use.
+					<br/>
+					+ Uncomment line of import color css you want to uses.
+				</p>
+				<p>
+					Here is example, you want to use <strong>muted-teal</strong> color:
+				</p>
+			    <pre class="brush: js; ruler: true; first-line: 1; highlight:[11]">
+					/*@import url('colors/default.css');*/
+					/*@import url('colors/corporate-blue.css');*/
+					/*@import url('colors/darkcyan.css');*/
+					/*@import url('colors/dark-slate-gray.css');*/
+					/*@import url('colors/dodger-blue.css');*/
+					/*@import url('colors/golden-rod.css');*/
+					/*@import url('colors/green.css');*/
+					/*@import url('colors/hot-pink.css');*/
+					/*@import url('colors/indian-red.css');*/
+					/*@import url('colors/medium-violet-red.css');*/
+					@import url('colors/muted-teal.css');
+					/*@import url('colors/orange.css');*/
+					/*@import url('colors/sea-green.css');v
+					/*@import url('colors/soft-green.css');*/
+					/*@import url('colors/yellow.css');*/
+			    </pre>
+				<h5>5.2 Change Font</h5>
+				<p>
+					We are using the google web font, if you would like to font for the GhostWall,
+					open file <strong>assets/css/screen.css</strong>, change google web font css url at line 1 and change font-family at line 5.
+				</p>
+			    <pre class="brush: js; ruler: true; first-line: 24; highlight:[24,26]">
+					@import url(YOUR_GOOGLE_WEB_FONT_URL_HERE);
+					*, body {
+						font-family: YOUR_GOOGLE_FONT_NAME_HERE;
+						...................................
+					}
+			    </pre>
+			    <h5>5.3 Change main background pattern</h5>
+			    <p><strong><em>File: assets/css/main.css</em></strong></p>
+			    <pre class="brush: js; ruler: true; first-line: 39; highlight:[40]">
+			    	.pattern{
+						background:YOUR_COLOR_CODE url('../img/YOUR_FILE_NAME_HERE') repeat;
+					}
+			    </pre>
+			    <h5>5.4 Change Social Network Icons</h5>
+				<p>
+					In this section you can change Social Network Icons on the header
+				</p>
+				<p><strong><em>File: partials/header.hbs</em></strong></p>
+			    <pre class="brush: js; ruler: true; first-line: 16; highlight:[17,18,19,20,21]">
+					&lt;ul class="social"&gt;
+	                	&lt;li class="twitter"&gt;
+	                		&lt;a href="#" target="_blank" title="Twitter"&gt;
+	                			&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
+	                		&lt;/a&gt;
+	                	&lt;/li&gt;
+	                	&lt;li class="facebook"&gt;
+	                		&lt;a href="#" target="_blank" title="Facebook"&gt;
+	                			&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;
+	                		&lt;/a&gt;
+	                	&lt;/li&gt;
+	                	&lt;li class="google"&gt;
+							&lt;a href="#" target="_blank" title="Google"&gt;
+	                			&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;
+	                		&lt;/a&gt;
+	                	&lt;/li&gt;
+	                	&lt;li class="linkedin"&gt;
+	                		&lt;a href="#" target="_blank" title="Linkedin"&gt;
+	                			&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;
+	                		&lt;/a&gt;
+	                	&lt;/li&gt;
+	                	&lt;li class="skype"&gt;
+	                		&lt;a href="#" target="_blank" title="Skype"&gt;
+	                			&lt;i class="fa fa-skype"&gt;&lt;/i&gt;
+	                		&lt;/a&gt;
+	                	&lt;/li&gt;
+	                	&lt;li class="rss"&gt;
+	                		&lt;a href="/rss/" target="_blank" title="Rss Feed"&gt;
+	                			&lt;i class="fa fa-rss"&gt;&lt;/i&gt;
+	                		&lt;/a&gt;
+	                	&lt;/li&gt;
+	                &lt;/ul&gt;
+			    </pre>
+			    <p><strong>How to find social icon?</strong>
+			    	Template using the Font Awesome for social icon, check out this link <a href="http://fortawesome.github.io/Font-Awesome/icons/#brand"  target="_blank">http://fortawesome.github.io/Font-Awesome/icons/#brand</a> for more info.
+			    </p>
+				<h5>5.5 Menu Config (Apply for Ghost v0.4.x only)</h5>
+				<p>
+					Since Ghost v0.4.x you can create a post with option is Static Page and intergate to theme menu.
+				</p>
+				<p>
+					In this section you can Add/Edit Menu display on Top
+				</p>
+				<ol>
+					<li>
+						<strong>Step 1: Create a Static Page</strong>
+						<p>
+							<img src="assets/img/create-static-page.png" alt=""/>
+						</p>
+					</li>
+					<li>
+						<strong>Step 2: Intergate to Menu</strong>
+						<p>Open File: <strong><em>partials/nav.hbs</em></strong> and follow the instruction below</p>
+						<pre class="brush: js; ruler: true; first-line: 1; highlight:[5,6,7,16,17,18,27,28,29]">
+							&lt;ul class="nav main-nav collapse navbar-collapse"&gt;
+								&lt;!-- Begin menu item 1--&gt;
+								&lt;li class="active"&gt;
+									&lt;!-- Keep href="{{@blog.url}}" for home page--&gt;
+									&lt;a href="{{@blog.url}}"&gt;
+										Home &lt;!-- Change text of menu here--&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;!-- End menu item 1--&gt;
+								&lt;!-- Begin menu item 2--&gt;
+								&lt;li&gt;
+									&lt;!--
+										1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+											Example: {{@blog.url}}/about-us/
+									--&gt;
+									&lt;a href="{{@blog.url}}/about-us/"&gt;
+										About Us &lt;!-- Change text of menu here--&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;!-- End menu item 2--&gt;
+								&lt;!-- Begin menu item 3--&gt;
+								&lt;li&gt;
+									&lt;!--
+										1.  Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/
+											Example: {{@blog.url}}/get-in-touch/
+									--&gt;
+									&lt;a href="#"&gt;
+										Get In Touch &lt;!-- Change text of menu here--&gt;
+									&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;!-- End menu item 3--&gt;
+							&lt;/ul&gt;
+						</pre>
+					</li>
+				</ol>
+				<h5>5.6 Change Get In Touch Content</h5>				
+				<div style="padding-left:45px">
+					<p>
+						<strong>5.6.1 Change Contact Info</strong>
+					</p>
+					<p>
+						In this section you can change your address, phone number and email display on footer
+					</p>
+					<p><strong><em>File: partials/widget-get-in-touch.hbs</em></strong></p>
+					<pre class="brush: js; ruler: true; first-line: 4; highlight:[7,11,15]">
+						&lt;ul class="vcard"&gt;
+							&lt;li&gt;
+								&lt;span class="vcard-icon"&gt;&lt;i class="fa fa-home"&lt;/i&gt;&lt;/span&gt;
+								&lt;span class="vcard-text"&gt;677 Tan Son Street, Ho Chi Minh, VN&lt;/span&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;span class="vcard-icon"&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt;&lt;/span&gt;
+								&lt;span class="vcard-text"&gt;(+84) 909 53 6892&lt;/span&gt;
+							&lt;/li>
+							&lt;li&gt;
+								&lt;span class="vcard-icon"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;&lt;/span&gt;
+								&lt;span class="vcard-text"&gt;info@yourdomain.com&lt;/span&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					</pre>
+				</div>
+				<div style="padding-left:45px">
+					<p>
+						<strong>5.6.2 Config MailChimp Newsletter Widget</strong>
+					</p>
+					<p>
+						In this section you can change the intro text (line 19) and mailchimp submit url (line 21) that use of MailChimp Newsletter Widget
+					</p>
+					<p><strong><em>File: partials/widget-get-in-touch.hbs</em></strong></p>
+					<pre class="brush: js; ruler: true; first-line: 18;highlight:[19,21]">			    
+						&lt;p&gt;
+							Sign up to receive email updates and to hear what's going on with me!
+						&lt;/p&gt;
+						&lt;form id="mc-form" action="YOUR_WEB_FORM_URL_HERE" method="post" novalidate="true"&gt;
+							&lt;div class="input-group"&gt;
+								&lt;input id="mc-email" type="email" name="EMAIL" placeholder="Email address" class="form-control" required &gt;
+								&lt;span class="input-group-btn"&gt;
+									&lt;button class="btn btn-default" type="submit"&gt;Subscribe&lt;/button&gt;
+								&lt;/span&gt;
+							&lt;/div&gt;
+						&lt;/form&gt;				
+					</pre>
+					<p>
+						Check out <a href="http://kb.mailchimp.com/article/how-can-i-add-my-signup-form-on-my-website"  target="_blank">this link</a> for more detail about adding mailchimp form to your widget. <em>Note: In this case you only need to copy web form action and change for YOUR_WEB_FORM_URL_HERE (line 7).</em>
+					</p>
+				</div>
+				<h5>5.7 Config Google Map Widget</h5>
+				<p>
+					In this section you can change your <strong>Latitude</strong> and <strong>Longitude</strong> display on Google Map Widget
+				</p>
+				<p><strong><em>File: assets/js/main.js</em></strong></p>
+				<pre class="brush: js; ruler: true; first-line: 12; highlight:[12,13]">
+					var your_latitude   = 10.839776; // Your map latitude
+					var your_longitude  = 106.647159; // Your map longitude
+				</pre>
+				<p>
+			    	How to find Latitude and Longitude? <a href="https://support.google.com/maps/answer/18539?hl=en" target="_blank">Click here for more detail</a>.
+			    </p>
+			    <h5>5.8 Config Sidebar</h5>
+			    <p>
+					In this section you can turn on / turn off any widget that uses on GhostWall
+				</p>
+			    <p><strong><em>File: partials/sidebar.hbs</em></strong></p>
+			    <pre class="brush: js; ruler: true; first-line: 1; highlight:[3,4]">
+					{{!
+						In this file you can turn on/off sidebar that you want
+						+ Add ! to a ahead of > on each sidebar to turn off
+						+ Remove ! to turn on
+					}}
+					{{> widget-recent-posts}}
+					{{> widget-flickr}}
+					{{!> widget-instagram}}
+					{{!> widget-dribbble}}
+					{{> widget-text}}
+			    </pre>
+			    <h5>5.9 Config Recent Posts Widget</h5>
+			    <p>
+			    	In this section you can change the number of post item you want to display on the Recent Posts Widget.
+			    </p>
+			    <p><strong><em>File: partials/widget-recent-posts.hbs</em></strong></p>
+			    <pre class="brush: js; ruler: true; first-line: 4; highlight:[4]">
+					&lt;div class="recent-post" data-size="5" data-desc="true" data-pubdate="false" data-character-limit="100"&gt;
+					&lt;/div&gt;
+				</pre>
+				<p>
+					<strong>data-size:</strong> number of post item you want to display
+					<br/>
+					<strong>data-desc:</strong> show post description
+					<br/>
+					<strong>data-character-limit:</strong> limit number of characters for post description
+					<br/>
+					<strong>data-pubdate:</strong> show publish date
+				</p>
+				<h5>5.10 Config Flickr widget</h5>
+				<p>
+					In this section you can change Flickr user id, change number of images you want to display on the Flickr Widget.
+				</p>
+				<p><strong><em>File: assets/js/main.js</em></strong></p>
+				<pre class="brush: js; ruler: true; first-line: 9; highlight:[9]">
+					var flickr_id='YOUR_FLICKR_ID_HERE';
+				</pre>
+				<p><strong><em>File: partials/widget-flickr.hbs</em></strong></p>
+				<pre class="brush: js; ruler: true; first-line: 4; highlight:[4]">
+					&lt;ul class="flickr-feed" data-mode="gallery" data-size="12" data-popup-preview="true"&gt;
+					&lt;/ul&gt;
+				</pre>
+				<p>
+					<strong>data-size:</strong> number of images you want to display
+					<br/>
+					<strong>data-popup-preview:</strong> prettyPhoto plugin integration for preview image
+				</p>
+				<p><strong>How to find flickr id?</strong></p>
+				<p>
+					Use <a href="http://idgettr.com/" target="_blank">http://idgettr.com</a> tool to find your Flickr user or group id. Just enter the address of your photostream or group pool and it'll find the number for you.
+				</p>
+				<h5>5.11 Instagram Widget</h5>
+				<p>
+					In this section you can change the Instagram user name, change number of images you want to display on the Instagram Widget.
+				</p>
+				<p><strong><em>File: assets/js/main.js</em></strong></p>
+				<pre class="brush: js; ruler: true; first-line: 10; highlight:[10,11]">
+					var instagram_accessToken='your-instagram-access-token'; // change [your-instagram-access-token] here
+					var instagram_clientID='your-instagram-application-clientID'; // change [your-instagram-application-clientID] here
+				</pre>
+				<p><strong><em>File: partials/widget-instagram.hbs</em></strong></p>
+				<pre class="brush: js; ruler: true; first-line: 4; highlight:[4]">
+					&lt;ul class="instagram-feed" data-mode="gallery" data-display="12" data-popup-preview="true"&gt;
+					&lt;/ul&gt;
+				</pre>
+				<p>
+					<strong>data-display:</strong> number of images you want to display
+					<br/>
+					<strong>data-popup-preview:</strong> prettyPhoto plugin integration for preview image
+				</p>
+				<p><strong>How to find Access Token and ClientID?</strong></p>
+				<p><a href="http://lab.adrianquevedo.com/jquery-spectragram/"  target="_blank">Check out this link</a> for more detail</p>
+				<h5>5.12 Enable Home Meta Post</h5>
+				<p>
+					<strong><em>File: index.hbs</em></strong> at line 33
+				</p>
+				<pre class="brush: js; ruler: true; first-line: 28; highlight:[33]">
+					&lt;div class="wrap"&gt;
+                        &lt;h2 class="post-title"&gt;&lt;a href="{{url}}"&gt;{{{title}}}&lt;/a&gt;&lt;/h2&gt;
+                        &lt;div class="post-excerpt"&gt;
+                            {{content words="0"}} {{excerpt}} ... &lt;a class="read-more" href="{{url}}">Read more »&lt;/a&gt;
+                        &lt;/div&gt;
+                        {{>home-meta-post}}
+                    &lt;/div&gt;
+				</pre>
+				<p>
+					If you want to Disable Home Meta Post just change line 33 to <strong>{{!>home-meta-post}}</strong>
+				</p>
+				<h5>5.13 Comment System Config</h5>
+				<div style="padding-left:45px">
+					<p>
+						<strong>5.13.1 Disqis Comment (Default config in your download)</strong>
+					</p>
+					<p>
+						By Default, this theme supports comments supplied by Disqus (http://disqus.com). For assistance in setting up your own Disqus account and customizing it for your needs,
+	  please see the Disqus QuickStart Guide: <a href="http://help.disqus.com/customer/portal/articles/466182-quick-start-guide">http://help.disqus.com/customer/portal/articles/466182-quick-start-guide</a>
+					</p>
+					<p>					
+						Change content in files below to turn on Disqis Comment 
+					</p>
+					<p><strong><em>File: partials/comment-config.hbs</em></strong></p>				
+					<pre class="brush: js; ruler: true; first-line: 1; highlight:[3]">
+						{{!>googleplus-comment-config}}
+						{{!>facebook-comment-config}}
+						{{>disqus-comment-config}}
+					</pre>
+					<p>
+						<strong><em>File: partials/disqus-comment-form.hbs</em></strong>, replace YOUR_DISQUS_SHORTNAME with your Disqis shortname.
+					</p>				
+					<pre class="brush: js; ruler: true; first-line: 2; highlight:[3]">
+						&lt;script type="text/javascript"&gt;
+							var disqus_shortname = 'YOUR_DISQUS_SHORTNAME';
+							/* * * DON'T EDIT BELOW THIS LINE * * */
+							(function() {
+								var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+								dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+								(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+							})();
+						&lt;/script&gt;
+					</pre>
+					<p>
+						<strong>If you have enabled Home Post Meta, please follow above.</strong>					
+					</p>
+					<p>
+						<strong><em>File: partials/home-meta-post.hbs</em></strong>
+					</p>
+					<pre class="brush: js; ruler: true; first-line: 5; highlight:[8]">
+						&lt;span class="comment pull-right"&gt;
+							{{!>facebook-comment-count}}
+							{{!>googleplus-comment-count}}
+							{{>disqus-comment-count}}
+						&lt;/span&gt;
+					</pre>
+					<p>
+						Next, you will need a Disqis Application API PublicKey, check out <a href="http://disqus.com/api/applications/" target="_blank">this link</a> to register Disqis Application API.
+					</p>
+					<p>
+						<strong><em>File: partials/disqus-comment-config.hbs</em></strong>, replace YOUR_DISQUS_SHORTNAME with your Disqis shortname and replace YOUR_DISQUS_APP_API_PUBLIC_KEY with your Public Key.
+					</p>
+					<pre class="brush: js; ruler: true; first-line: 1; highlight:[2,3]">
+						&lt;script&gt;
+							var disqusPublicKey = "YOUR_DISQUS_APP_API_PUBLIC_KEY";
+							var disqusShortname = "YOUR_DISQUS_SHORTNAME"; // Replace with your own shortname
+						&lt;/script&gt;
+					</pre>
+				</div>
+				<div style="padding-left:45px">
+					<p>
+						<strong>5.13.2 Facebook Comment</strong>
+					</p>
+					<p>					
+						Change content in files below to turn on Facebook Comment 
+					</p>
+					<p><strong><em>File: partials/comment-config.hbs</em></strong></p>				
+					<pre class="brush: js; ruler: true; first-line: 1; highlight:[2]">
+						{{!>googleplus-comment-config}}
+						{{>facebook-comment-config}}
+						{{!>disqus-comment-config}}
+					</pre>
+					<p>
+						You will need a Facebook Application ID, check out <a href="https://developers.facebook.com/apps‎" target="_blank">this link</a> to register Facebook Application.
+					</p>
+					<p>
+						<strong><em>File: partials/facebook-comment-config.hbs</em></strong>, replace YOUR_APP_ID with your Facebook Application ID.
+					</p>				
+					<pre class="brush: js; ruler: true; first-line: 2; highlight:[7]">
+						&lt;script&gt;
+							(function(d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0];
+								if (d.getElementById(id)) return;
+								js = d.createElement(s); js.id = id;
+								js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=YOUR_APP_ID";
+								fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));
+						&lt;/script&gt;
+					</pre>
+					<p>
+						<strong>If you have enabled Home Post Meta, please follow above.</strong>					
+					</p>
+					<p>
+						<strong><em>File: partials/home-meta-post.hbs</em></strong>
+					</p>
+					<pre class="brush: js; ruler: true; first-line: 5; highlight:[6]">
+						&lt;span class="comment pull-right"&gt;
+							{{>facebook-comment-count}}
+							{{!>googleplus-comment-count}}
+							{{!>disqus-comment-count}}
+						&lt;/span&gt;
+					</pre>
+				</div>
+				<div style="padding-left:45px">
+					<p>
+						<strong>5.13.3 Google Plus Comment</strong>
+					</p>
+					<p>					
+						Change content in files below to turn on Google Plus Comment 
+					</p>
+					<p><strong><em>File: partials/comment-config.hbs</em></strong></p>				
+					<pre class="brush: js; ruler: true; first-line: 1; highlight:[1]">
+						{{>googleplus-comment-config}}
+						{{!>facebook-comment-config}}
+						{{!>disqus-comment-config}}
+					</pre>
+					<p>
+						<strong>If you have enabled Home Post Meta, please follow above.</strong>					
+					</p>
+					<p>
+						<strong><em>File: partials/home-meta-post.hbs</em></strong>
+					</p>
+					<pre class="brush: js; ruler: true; first-line: 5; highlight:[7]">
+						&lt;span class="comment pull-right"&gt;
+							{{!>facebook-comment-count}}
+							{{>googleplus-comment-count}}
+							{{!>disqus-comment-count}}
+						&lt;/span&gt;
+					</pre>
+				</div>						
+				<h3 id="writing-posts">6. Writing Posts</h3>
+				<p>
+					There are some notes when you write posts:
+				</p>
+				<p>
+					+ Put image (![alt](http://)) in the top of post for image thumbnail post type
+				</p>
+				<p>
+					+ Put soundcloud embed code in the top of post for audio post type. Example:					
+				</p>
+				<pre class="brush: js; ruler: true; first-line: 1; highlight:[]">
+					&lt;iframe height="166" src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/104708200"&gt;&lt;/iframe&gt;
+				</pre>
+				<p>
+					+ Put youtube embed code in the top of post for youtube video post type. Example:					
+				</p>
+				<pre class="brush: js; ruler: true; first-line: 1; highlight:[]">
+					&lt;iframe width="560" height="315" src="//www.youtube.com/embed/aeLTx-ZhlFQ"&gt;&lt;/iframe&gt;
+				</pre>
+				<p>
+					+ Put vimeo embed code in the top of post for vimeo video post type. Example:					
+				</p>
+				<pre class="brush: js; ruler: true; first-line: 1; highlight:[]">
+					&lt;iframe src="//player.vimeo.com/video/77270043" width="500" height="281"&gt;&lt;/iframe&gt;
+				</pre>
+			    <h3 id="using-shortcodes">7. Using Shortcodes</h3>
+			    <p>
+			    	At present GhostWall only support html shortcode from BootStrap Framework. Check out <a href="http://getbootstrap.com/" target="_blank">this link</a>, copy short code and paste to post content area.
+			    </p>
+			    <h3 id="custom-theme">8. Custom Theme</h3>
+			    <p><strong><em>File: assets/css/custom.css</em></strong></p>
+			    <p>
+			    	Add your custom styles here instead of screen.css so it is easier to update your theme. Simply copy an existing style from screen.css to this file, and modify it to your liking.
+			    </p>
+			    <h3 id="update">9. Update</h3>
+				<p>
+					File &amp; folder changes:
+					<pre>
+= index.hbs
+= Add: tag.hbs
+					</pre>
+				</p>
+				<h5>9.1 Backup your file:</h5>
+				<ul>
+					<li>index.hbs</li>					
+				</ul>
+				<h5>9.2 Upload:</h5>
+				<p>
+					Upload file index.hbs and tag.hbs to your host
+				</p>
+				<h5>9.3 Restart your ghost</h5>				
+			    <p>
+					<strong>We tread on the heels of Ghost. If you need any extra or feature just email us and we will include it in the next update.</strong> 
+				</p>
+			    <h3 id="credits">10. Credits</h3>
+			    <h5>10.1 Javascript</h5>
+			    <p>GhostWall uses several scripts many of which are documented within the theme's code. If you're a developer, you will find this particularly useful.</p>
+			    <ul class="nav nav-list">
+					<li>
+						<a href="http://getbootstrap.com/" target="_blank">
+							<i class="icon-chevron-right"></i> Bootstrap Framework
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/scaron/prettyphoto" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery Pretty Photo
+						</a>
+					</li>
+					<li>
+						<a href="http://gsgd.co.uk/sandbox/jquery/easing" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery Easing
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/ReactiveRaven/jqBootstrapValidation" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery Bootstrap Validation
+						</a>
+					</li>
+					<li>
+						<a href="http://isotope.metafizzy.co" target="_blank">
+							<i class="icon-chevron-right"></i> Isotope v1.5.21 (Commercial ready)
+						</a>
+					</li>
+					<li>
+						<a href="http://infinite-scroll.com/" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery Infinite Scroll
+						</a>
+					</li>
+					<li>
+						<a href="http://fitvidsjs.com/" target="_blank">
+							<i class="icon-chevron-right"></i> FitVids
+						</a>
+					</li>
+					<li>
+						<a href="http://www.newmediacampaigns.com/page/jquery-flickr-plugin" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery Flickr
+						</a>
+					</li>
+					<li>
+						<a href="http://lab.adrianquevedo.com/jquery-spectragram/" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery - Spectragram
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/tylergaw/jribbble" target="_blank">
+							<i class="icon-chevron-right"></i> Jribbble
+						</a>
+					</li>
+					<li>
+						<a href="http://desandro.github.io/imagesloaded/" target="_blank">
+							<i class="icon-chevron-right"></i> imagesLoaded
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/galambalazs/smoothscroll" target="_blank">
+							<i class="icon-chevron-right"></i> SmoothScroll v1.2.1
+						</a>
+					</li>
+					<li>
+						<a href="http://github.com/marioestrada/jQuery-gMap" target="_blank">
+							<i class="icon-chevron-right"></i> jQuery gMap
+						</a>
+					</li>
+					<li>
+						<a href="http://alexgorbatchev.com/SyntaxHighlighter" target="_blank">
+							<i class="icon-chevron-right"></i> SyntaxHighlighter
+						</a>
+					</li>
+			    </ul>
+			    <h5>10.2 Images</h5>
+			    <p>
+			    	Images showed on preview files are from <a href="http://pixabay.com" target="_blank">pixabay.com</a> and <a href="http://subtlepatterns.com" target="_blank">subtlepatterns.com</a>. Being designed with multipurpose attitude in mind, we showed some images on our preview files so you can have an idea what can be accomplished. Not a single image file is included with the download, they were just for demo purposes due to copyright.
+			    </p>
+			    <h5>10.3 Fonts</h5>
+				<ul>
+					<li>
+						<strong>Google Fonts</strong> - <a href="http://www.google.com/webfonts"  target="_blank">http://www.google.com/webfonts</a>
+					</li>
+					<li>
+						<strong>Font Awesome</strong> - <a href="http://fortawesome.github.com/Font-Awesome/"  target="_blank">http://fortawesome.github.com/Font-Awesome/</a>
+					</li>
+				</ul>
+			    <br />
+			    <p>
+			    	Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. Please contact me via email or social media. I'll do my best to assist!
+			    </p>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="container">Copyright &copy; 2013 by Sunflower Theme. All rights reserved.</div>
+	</footer>
+</body>
+</html>
